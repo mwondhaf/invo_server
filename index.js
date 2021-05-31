@@ -36,6 +36,9 @@ app.use(express.urlencoded({ limit: "30mb", extended: true }))
 
 app.use(cors())
 
+var distDir = __dirname + "/dist/"
+ app.use(express.static(distDir))
+
 // links
 app.use("/api/customers", customerRoutes)
 app.use("/api/categories", categoryRoutes)
