@@ -37,11 +37,11 @@ app.use(express.urlencoded({ limit: "30mb", extended: true }))
 app.use(cors())
 
 // links
-app.use("/api/customers", customerRoutes)
-app.use("/api/categories", categoryRoutes)
-app.use("/api/products", productRoutes)
-app.use("/api/orders", orderRoutes)
+//app.use("/api/customers", customerRoutes)
+//app.use("/api/categories", categoryRoutes)
+//app.use("/api/products", productRoutes)
+//app.use("/api/orders", orderRoutes)
 
-// app.get("/", (req, res) => {
-//   res.send("Hello from Express!")
-// })
+app.get("/", (req, res) => {
+ res.send("Hello from Express!")
+ })
