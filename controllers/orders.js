@@ -25,6 +25,9 @@ export const getOrder = async (req, res) => {
 
 // get all orders
 export const getOrders = async (req, res) => {
+  console.log("====================================")
+  console.log("get orders")
+  console.log("====================================")
   try {
     const orders = await Order.find()
     res.status(200).json(orders)
