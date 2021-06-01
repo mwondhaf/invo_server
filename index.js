@@ -42,7 +42,6 @@ app.use("/api/categories", categoryRoutes)
 app.use("/api/products", productRoutes)
 app.use("/api/orders", orderRoutes)
 
-// testing
 app.get("/", (req, res) => {
   res.send("Hello from Express!")
 })
