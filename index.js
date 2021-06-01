@@ -40,7 +40,7 @@ app.use(cors())
 app.use("/api/customers", customerRoutes)
 app.use("/api/categories", categoryRoutes)
 app.use("/api/products", productRoutes)
-app.use("/api/orders", orderRoutes)
+app.get("/api/orders", orderRoutes)
 
 app.get("/", (req, res) => {
   res.send("Hello from Express!")
